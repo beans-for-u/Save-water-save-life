@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <script>
+        function checkq1() {
+           if (document.getElementById("q1A").checked){
+            document.getElementById("ans").innerHTML="correct!";
+           }
+           else if (document.getElementById("q1B").checked || document.getElementById("q1C").checked || document.getElementById("q1D").checked) {
+            document.getElementById("ans").innerHTML="wrong it was A!";
+           }
+           else{
+            document.getElementById("ans").innerHTML="please select an option";
+           }
+        }
+        function checkq2() {
+           if (document.getElementById("q2C").checked){
+            document.getElementById("ans2").innerHTML="correct!";
+           }
+           else if (document.getElementById("q2B").checked || document.getElementById("q2A").checked || document.getElementById("q2D").checked) {
+            document.getElementById("ans2").innerHTML="wrong it was C!";
+           }
+           else{
+            document.getElementById("ans2").innerHTML="please select an option";
+           }
+        }
+        function checkq3() {
+           if (document.getElementById("q3D").checked){
+            document.getElementById("ans3").innerHTML="correct!";
+           }
+           else if (document.getElementById("q3B").checked || document.getElementById("q3A").checked || document.getElementById("q3C").checked) {
+            document.getElementById("ans3").innerHTML="wrong it was D!";
+           }
+           else{
+            document.getElementById("ans3").innerHTML="please select an option";
+           }
+        }
+        function checkq4() {
+           if (document.getElementById("q4A").checked){
+            document.getElementById("ans4").innerHTML="correct!";
+           }
+           else if (document.getElementById("q4B").checked || document.getElementById("q4C").checked || document.getElementById("q3D").checked) {
+            document.getElementById("ans4").innerHTML="wrong it was A!";
+           }
+           else{
+            document.getElementById("ans4").innerHTML="please select an option";
+           }
+        }
+        function checkq5() {
+           if (document.getElementById("q5B").checked){
+            document.getElementById("ans5").innerHTML="correct!";
+           }
+           else if (document.getElementById("q5A").checked || document.getElementById("q5C").checked || document.getElementById("q5D").checked) {
+            document.getElementById("ans5").innerHTML="wrong it was B!";
+           }
+           else{
+            document.getElementById("ans5").innerHTML="please select an option";
+           }
+        }
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e6f2ff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #0099cc;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 15px;
+            height: 570px;
+            width: 550px;
+        }
+
+        h2 {
+            color: #006699;
+        }
+
+        ul {
+            background: #f0f8ff;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #0099cc;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        div {
+            text-align: center;
+        }
+        button{
+            border-radius: 12px;
+            border-color: black;
+            color:black;
+            background-color: #f0f8ff;
+            border-style: solid;
+            padding: 5px;
+            transition: 0.5s;
+        }
+        button:hover{
+            background-color: #0099cc;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Quiz</h1>
+        <div>
+            <button onclick="window.location.href='gp.html'">
+                Back to home page
+            </button>
+        </div>
+    </header>
+
+    <section>
+     <div>
+        <h2>How can people save water?</h2>
+        <p>
+            <bold>A</bold>:Install aerators in sinks
+            <br>
+            <bold>B</bold>:Take longer showers
+            <br>
+            <bold>C</bold>:Water plants in hottest time of day
+            <br>
+            <bold>D</bold>:Buy tubs and pools
+        </p>
+        <input id="q1A" type="radio" name="a">
+        <label>A</label>
+        <input id="q1B" type="radio"name="a">
+        <label>B</label>
+        <input  id="q1C"type="radio"name="a">
+        <label>C</label>
+        <input  id="q1D" type="radio"name="a">
+        <label>D</label>
+        <button onclick="checkq1()">check</button>
+        <br>
+        <label id="ans">?</label>
+     </div>
+     <div>
+        <h2>Chennai is dependent on ___ for water</h2>
+        <p>
+            <bold>A</bold>:desailnation plants
+            <br>
+            <bold>B</bold>:river water
+            <br>
+            <bold>C</bold>:monsoon and rain
+            <br>
+            <bold>D</bold>:water from other cities
+        </p>
+        <input id="q2A" type="radio" name="b">
+        <label>A</label>
+        <input id="q2B" type="radio"name="b">
+        <label>B</label>
+        <input  id="q2C"type="radio"name="b">
+        <label>C</label>
+        <input  id="q2D" type="radio"name="b">
+        <label>D</label>
+        <button onclick="checkq2()">check</button>
+        <br>
+        <label id="ans2">?</label>
+     </div>
+     <div>
+        <h2>Water scarcity affects which industries?</h2>
+        <p>
+            <bold>A</bold>:Agriculture
+            <br>
+            <bold>B</bold>:Textiles
+            <br>
+            <bold>C</bold>:Manufacturing
+            <br>
+            <bold>D</bold>:All of the above
+        </p>
+        <input id="q3A" type="radio" name="c">
+        <label>A</label>
+        <input id="q3B" type="radio"name="c">
+        <label>B</label>
+        <input  id="q3C"type="radio"name="c">
+        <label>C</label>
+        <input  id="q3D" type="radio"name="c">
+        <label>D</label>
+        <button onclick="checkq3()">check</button>
+        <br>
+        <label id="ans3">?</label>
+     </div>
+     <div>
+        <h2>The renaissance dam dispute was fought by which two countries?</h2>
+        <p>
+            <bold>A</bold>:Ethiopia and Egypt
+            <br>
+            <bold>B</bold>:India and China
+            <br>
+            <bold>C</bold>:France and Germany
+            <br>
+            <bold>D</bold>:Tonga and Papua New Guinea
+        </p>
+        <input id="q4A" type="radio" name="d">
+        <label>A</label>
+        <input id="q4B" type="radio"name="d">
+        <label>B</label>
+        <input  id="q4C"type="radio"name="d">
+        <label>C</label>
+        <input  id="q4D" type="radio"name="d">
+        <label>D</label>
+        <button onclick="checkq4()">check</button>
+        <br>
+        <label id="ans4">?</label>
+     </div>
+     <div>
+        <h2>Chennai introduced___policy in 2022 to lower water waste</h2>
+        <p>
+            <bold>A</bold>:Promote desailnation plants
+            <br>
+            <bold>B</bold>:Metering
+            <br>
+            <bold>C</bold>:Boost monsoon rainfall
+            <br>
+            <bold>D</bold>:Better water
+        </p>
+        <input id="q5A" type="radio" name="e">
+        <label>A</label>
+        <input id="q5B" type="radio"name="e">
+        <label>B</label>
+        <input  id="q5C"type="radio"name="e">
+        <label>C</label>
+        <input  id="q5D" type="radio"name="e">
+        <label>D</label>
+        <button onclick="checkq5()">check</button>
+        <br>
+        <label id="ans5">?</label>
+     </div>
+    </section>
+
+    <footer>
+        <p>Created by Vandit C,Arjun J,Nabh B,Sahana N | Together we can save water 🌍💧</p>
+    </footer>
+
+</body>
+
+</html>
